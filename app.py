@@ -41,7 +41,7 @@ def extrair_estrelas(label: str) -> int:
 
 def plotar_graficos(df_resultados):
     """Gera os gráficos de barras e pizza com base nos resultados."""
-    contagem = df_resultados['estrelas'].value_counts().to_dict()
+    contagem = df_resultados['Estrelas'].value_counts().to_dict()
     
     # Preenche categorias faltantes com 0 para o gráfico manter a estrutura
     for i in range(1, 6):
